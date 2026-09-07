@@ -1,10 +1,8 @@
 ## Autohotkey Window Manager
 
-An AHK script to maximize screen space on a dual monitor setup. 
- 
 This is a program that helps you maintain the positions of your windows & programs. Everyone has their favorite programs and favorite places for them on the screen, and this program will allow the user to bring them all back to their desired locations no matter if the programs were closed, minimized, maximized, or moved, and it will do all of this quickly and at a push of a button. 
 
-It assumes 2 monitors, side by side with the same resolutions.
+It assumes 2 monitors, side by side with the same resolutions. It also 
 
 Written for and by the easily distracted! 
 
@@ -13,9 +11,9 @@ Written for and by the easily distracted!
 2. Adjust these variables to your liking. You can get coordinates and pixel height using the Window Spy that's included with the AHK install. 
 	1. Line 9, windowsbarheight. This variable is how tall the taskbar is in Windows. 
 	2. The arrays of the 8 programs, lines 35-65. These are the variables that define:
-		1. Program names
+		1. Program locations. These can be websites, files, or executables. 
 		2. Program titles (the windows can be moved around by their names)
-		3. The X and Y coordinates of the program's window, and also each programs' width and depth. 
+		3. The X and Y coordinates of the program's window, and also each programs' width and depth. Right now it assumes you'd want 2 monitors with each monitor making a 2 x 2 square, but you can update that here in the arrays.
 
 ### Summary
 First, the program defines important variables, such as the location of the programs in the file system & the window titles of the programs. It also defines variables for the total screen size, the size of the Windows bar, how much screen is really available without the Windows bar, and variables such as halfheight for later, so if a user wanted an app to take up half the height of the screen, they'd quickly be able to use the right variables. 
